@@ -8,6 +8,8 @@ Módulo II: Diseño Web con HTML5 y CSS3 - II Semestre 2026
 
 - `Laboratorio #2 HTML5.pdf` - Enunciado del laboratorio
 - `index.html` - Página de inicio con enlaces a todos los ejercicios
+- `Imagen/icono.ico` - Ícono de la pestaña del navegador (favicon), enlazado en cada
+  página con `<link rel="shortcut icon">`
 - `tabla1.html` - **Tabla #1**: informe de gastos de viaje con metadatos en el `<head>`,
   `<caption>` y celdas `<th>` con los atributos `id`, `axis` y `headers`
 - `tabla2.html` + `Estilos/estilosTabla.css` - **Tabla #2**: tabla con hoja de estilos

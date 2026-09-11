@@ -13,17 +13,43 @@
         input:required:valid {
             border: 1px solid green;
         }
+        #confirmacion {
+            color: green;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
-    <form>
+    <form id="formCorreo">
         <div style="margin:1em">
             <label for="email1">Enter email</label><br />
             <!-- <input type="week" id="week1" name="week1" value="2024-W25" placeholder="Choose week"/> -->
             <input type="email" id="email1" name="email1" value="" placeholder="Enter email" required />
+            <button type="submit">Añadir</button>
+
+            <!-- Mensaje de confirmación: se llena al enviar un correo válido -->
+            <p id="confirmacion" role="status"></p>
         </div>
     </form>
+
+    <script>
+        const formulario = document.getElementById("formCorreo");
+        const campoCorreo = document.getElementById("email1");
+        const confirmacion = document.getElementById("confirmacion");
+
+        // El evento submit solo se dispara si el correo pasa la validación de HTML5
+        formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault(); // Evita que la página se recargue
+            // textContent muestra el correo como texto, sin interpretar HTML
+            confirmacion.textContent = "El correo " + campoCorreo.value.trim() + " se añadió correctamente.";
+        });
+
+        // Si el usuario vuelve a escribir, se borra la confirmación anterior
+        campoCorreo.addEventListener("input", function () {
+            confirmacion.textContent = "";
+        });
+    </script>
 
 </body>
 </html>

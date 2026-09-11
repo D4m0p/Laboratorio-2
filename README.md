@@ -22,7 +22,8 @@ Módulo II: Diseño Web con HTML5 y CSS3 - II Semestre 2026
   (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`);
   el año del pie de página se genera con PHP
 - `validaciones.html` - Validación de formularios con HTML5 y las pseudoclases
-  `:required:invalid` y `:required:valid`
+  `:required:invalid` y `:required:valid`; al añadir un correo válido se muestra
+  un mensaje de confirmación
 
 ## Temas
 
